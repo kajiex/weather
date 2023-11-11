@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(148, 191, 218);
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.container {
+    background: rgb(38,136,100);
+background: linear-gradient(32deg, rgba(38,136,100,1) 0%, rgba(65,175,165,1) 46%, rgba(34,201,208,1) 79%, rgba(14,176,235,1) 100%);
+    min-width: 60vh;
+    max-width: 60vh;
+    margin: auto;
+    position: relative;
+    margin-top: 5%;
+    min-height: 70vh;
+    max-height: 70vh;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#lokalizacjia {
+    position: relative;
+    min-width: 45vh;
+    max-width: 45vh;
+    min-height: 5vh;
+    max-height: 5vh;
+    border-radius: 20px;
+    border: 1px solid;
+    font-size: 3vh;
+    margin: 10px; /* Add margin to the input text */
+    padding: 10px; /* Optional: Add padding to the input text */
+}
+
+
+#lokalizacjia::placeholder {
+    padding-left: 13px;
+}
+
+.fa-solid.fa-magnifying-glass.fa-4x {
+    position: relative;
+   
+}
+
+.fa-solid.fa-magnifying-glass.fa-4x:hover {
+    color: rgb(55, 71, 92);
+}
+
+
+#sunny {
+    min-width: 26vh;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+
+.search {
+    margin-bottom: 90%;
+}
+
+#temperatura {
+    font-size: 9vh;
+    position: absolute;
+    left: 50%;
+    top: 40%; /* Adjust the top position as needed */
+    transform: translateX(-50%);
+    text-align: center; /* Center the text horizontally */
+}
+.humidity{
+    position: fixed;
+    left: 75vh;
+    top: 60%;
+    text-align: center;
+}
+#humidity{
+    min-width: 8vh;
+}
+#humiditytext{
+    position: fixed;
+    margin-left: 5%;
+    margin-bottom: 13%;
+    font-size: 5vh;
+}
+#miasto {
+    font-size: 5vh;
+    position: fixed;
+    left: 50%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.wind {
+    position: fixed;
+    right: 90vh;
+    top: 59.5%;
+    text-align: center;
+}
+
+#wind {
+    min-width: 8vh;
+    display: block;
+    margin: 0 auto; /* Center the wind image horizontally */
+}
+
+#windspeed {
+    position: absolute;
+    top: 10%;
+    left: 100%; /* Position the wind speed to the right of the wind image */
+    font-size: 4vh;
+    transform: translateX(10px); /* Adjust the spacing between the image and text */
+}
+.notfound{
+    position: fixed;
+    margin-top: 5%;
+    visibility: hidden;
+    transition: 0.1s all ease-in-out;
+    
+}
+#lupa{
+    width: 50vh;
+}
